@@ -21,7 +21,7 @@ Python 3.10 is recommended. The CPU reference was tested on Linux/WSL2 with the 
 python -m pip install -r requirements.txt
 ```
 
-GPU execution requires a compatible JAX 0.6.2 CUDA installation. The original experiments used an NVIDIA RTX 6000 Ada Generation. Training and evaluation scripts disable GPU memory preallocation and default to a 0.45 memory fraction; existing environment settings take precedence.
+GPU execution requires a compatible JAX 0.6.2 CUDA installation. The original experiments used an NVIDIA RTX 6000 Ada Generation.
 
 ## Training and evaluation
 
@@ -67,5 +67,3 @@ PennyLane's default template uses RZ-RY-RZ rotations and CNOT connections whose 
 Datasets are downloaded through torchvision from the original [MNIST](https://yann.lecun.org/exdb/mnist/) and [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) distributions. Full datasets are not redistributed.
 
 The archived runs used torch 2.11.0 and torchvision 0.26.0 for data loading. Local verification used torch 2.6.0 and torchvision 0.21.0; PennyLane 0.42.3, JAX 0.6.2 and Optax 0.2.8 are common to both.
-
-Local checks cover agreement with the experimental implementation and short end-to-end runs. The full 66-model training sweep and a fresh-environment installation have not been rerun for this release. Hardware and software differences can change training trajectories despite identical seeds.
