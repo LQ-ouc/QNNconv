@@ -1,0 +1,8 @@
+# CPU reference: Python 3.10.20; tested on Linux/WSL2.
+numpy==2.2.6
+jax==0.6.2
+jaxlib==0.6.2
+pennylane==0.42.3
+optax==0.2.8
+torch==2.6.0
+torchvision==0.21.0
